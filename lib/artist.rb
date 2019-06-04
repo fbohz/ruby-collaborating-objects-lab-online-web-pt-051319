@@ -1,3 +1,4 @@
+require 'pry'
 class Artist 
   attr_accessor :name
   @@all = []
@@ -25,7 +26,15 @@ class Artist
  end 
  
   
- def find_or_create_by_name(artist_name)
- end
+ def self.find_or_create_by_name(artist_name)
+      all.detect do |object| 
+       artist = self.new(artist_name) unless object == artist_name
+      end     
+ end 
+ 
+ def print_songs   
+  songs.each {|song| puts song.name}
+ end 
+
 
 end
