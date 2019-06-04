@@ -23,7 +23,7 @@ class Artist
    @@all 
  end 
  
-  
+  #i had problems with this method because it was not returning the object before so had to refactor. RSPEC did not specify so. 
   def self.find_or_create_by_name(name)
     name_match = all.detect{|object| object.name == name}
     if name_match
