@@ -12,7 +12,7 @@ class Song
    new_song.artist.add_song(new_song)
    new_song
   end  
-  
+
 end
 
 
