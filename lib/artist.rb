@@ -35,6 +35,15 @@ class Artist
     end
   end
   
+<<<<<<< HEAD
+=======
+  def self.find_or_create_by_name(artist_name)
+      all.detect do |object| 
+       artist = self.new(artist_name) unless object == artist_name
+      end
+ end 
+  
+>>>>>>> c23bf9c20c99e6ee9894da0d18785950987c6518
 
  
  def print_songs   
