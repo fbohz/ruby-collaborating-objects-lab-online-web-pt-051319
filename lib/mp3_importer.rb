@@ -7,7 +7,7 @@ class MP3Importer
   end 
   
   def files
-     binding.pry
+    
     Dir.entries(@path).select {|i| i.end_with? ".mp3" }
    
   end
